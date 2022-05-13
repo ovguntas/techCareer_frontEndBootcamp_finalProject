@@ -1,16 +1,3 @@
-//template
-// let template = <div>
-
-//     <h1 className="display-1 text-danger">React Heading</h1>
-//     <p style={{ color: "green", fontSize: "20px" }} className="paragrafElement">Paragraf deneme, babel ile compile edilmiş olan script file'ı html de çağırmak gerekiyor</p>
-
-// </div>
-
-// // ReactDOM
-// ReactDOM.render(template, document.getElementById("root"))
-
-
-
 
 let counter = 0;
 
