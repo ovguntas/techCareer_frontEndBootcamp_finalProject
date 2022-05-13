@@ -26,7 +26,7 @@
 
 
         <!-- navbar start -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav id="navv" class="navbar navbar-expand-lg navbar-dark bg-secondary fixed-top  ">
             <div class="container">
                 <a class="navbar-brand" href="#">WATCHES</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -34,8 +34,8 @@
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
@@ -59,14 +59,18 @@
 
                             </ul>
                         </li>
-                        <li>
+
+
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li class="ms-auto">
                             <!-- buradaki spana sayı yhazdırcan sepetteki ürün sayısı artıkça artacak o sayı  -->
                             <i class="fa-solid fa-basket-shopping text-white pt-2"><span id="productAddedBasket"
                                     class="badge bg-secondary"></span></i>
                         </li>
-
                     </ul>
-
                 </div>
             </div>
         </nav>
@@ -252,11 +256,11 @@
     <!-- main stars -->
     <main class="container-fluid">
         <section id="collections">
-            <div class="row">
-                <div class="col-6">
-                    <h2>Collections</h2>
+            <div id="collectionInformation" class="row">
+                <div class="col-6 d-flex justify-content-center align-items-center">
+                    <h2 class="display-2">Collections</h2>
                 </div>
-                <div class="col-6">
+                <div class="col-6 d-flex justify-content-center align-items-center">
                     <p>
                         Our brand's philosophy is to meet their expectations by designing timepieces as technically
                         impressive
