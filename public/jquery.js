@@ -1,14 +1,4 @@
 
-// $(function () {
-//     console.log("Hello")
-// })
-
-// $(function () {
-
-//     $("#root").after("<p>We are gonna use jquery to validate login form submission by jquery</p> ")
-
-// })
-
 
 // login form validation
 
@@ -66,8 +56,6 @@ $(function () {
 $(function () {
     $(window).on("scroll", (scrolEvent) => {
         let lastPositionTracker = scrolEvent.target.scrollingElement.scrollTop;
-
-        // console.log(lastPositionTracker)
         if (lastPositionTracker > 20) {
             $("#navv").removeClass("bg-secondary").addClass("bg-light")
             $("#navv").removeClass("navbar-dark").addClass("navbar-light")
