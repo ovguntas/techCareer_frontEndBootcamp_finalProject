@@ -1,17 +1,12 @@
 "use strict";
 
 //template
-var template = /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("h1", {
-  className: "display-1 text-danger"
-}, "React Heading"), /*#__PURE__*/React.createElement("p", {
-  style: {
-    color: "green",
-    fontSize: "20px"
-  },
-  className: "paragrafElement"
-}, "Paragraf deneme, babel ile compile edilmi\u015F olan script file'\u0131 html de \xE7a\u011F\u0131rmak gerekiyor")); // ReactDOM
-
-ReactDOM.render(template, document.getElementById("root"));
+// let template = <div>
+//     <h1 className="display-1 text-danger">React Heading</h1>
+//     <p style={{ color: "green", fontSize: "20px" }} className="paragrafElement">Paragraf deneme, babel ile compile edilmiş olan script file'ı html de çağırmak gerekiyor</p>
+// </div>
+// // ReactDOM
+// ReactDOM.render(template, document.getElementById("root"))
 var counter = 0; //adding function
 //artırıcı fonksyon
 
