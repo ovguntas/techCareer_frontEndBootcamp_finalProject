@@ -14,6 +14,11 @@
 
     <!-- fontawesome cdn connection -->
     <script src="https://kit.fontawesome.com/75bc2eaae3.js" crossorigin="anonymous"></script>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,400&display=swap"
+        rel="stylesheet">
     <!-- external css link -->
     <link rel="stylesheet" href="app.css">
 
@@ -22,7 +27,7 @@
 
 <body>
     <!-- header starts -->
-    <header style="font-size:0.8rem;">
+    <header style="font-size:1rem;">
 
 
         <!-- navbar start -->
@@ -39,6 +44,10 @@
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">About</a>
+                        </li>
+
 
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -52,9 +61,11 @@
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
-                                <li><button type="button" class="dropdown-item" data-bs-toggle="modal"
+                                <li>
+                                    <button type="button" class="dropdown-item" data-bs-toggle="modal"
                                         data-bs-target="#LogIn">Log
-                                        In</button></li>
+                                        In</button>
+                                </li>
                                 <li>
 
                             </ul>
@@ -62,16 +73,17 @@
 
 
                     </ul>
-                </div>
-                <div>
+
                     <ul>
-                        <li class="ms-auto">
+                        <li>
                             <!-- buradaki spana sayı yhazdırcan sepetteki ürün sayısı artıkça artacak o sayı  -->
                             <i class="fa-solid fa-basket-shopping text-white pt-2"><span id="productAddedBasket"
                                     class="badge bg-secondary"></span></i>
                         </li>
                     </ul>
                 </div>
+
+
             </div>
         </nav>
 
@@ -215,7 +227,7 @@
                 </div>
                 <div class="carousel-item" data-bs-interval="2000">
                     <div class="container-carousel">
-                        <img src="https://images.unsplash.com/photo-1557531365-e8b22d93dbd0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80"
+                        <img src="https://images.unsplash.com/photo-1539874754764-5a96559165b0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2130&q=80"
                             class="d-block w-100" alt="...">
                         <div class="carousel-caption d-none d-md-block">
                             <h5 class="carousel-text">Second slide label</h5>
@@ -260,7 +272,7 @@
                 <div class="col-6 d-flex justify-content-center align-items-center">
                     <h2 class="display-2">Collections</h2>
                 </div>
-                <div class="col-6 d-flex justify-content-center align-items-center">
+                <div class="col-sm-6 d-flex justify-content-center align-items-center">
                     <p>
                         Our brand's philosophy is to meet their expectations by designing timepieces as technically
                         impressive
@@ -271,41 +283,50 @@
             <div class="row">
                 <div id="collectionTypes">
                     <div class="row text-center">
-                        <div class="collectionTypes col">
+                        <div class="collectionTypes col-sm">
                             <img class="img-thumbnail"
                                 src="https://www.vacheron-constantin.com/dam/rcq/vac/23/06/51/9/2306519.png.transform.vacprodcardhd.png"
                                 alt="">
-                            Traditional
+                            <p>Traditional</p>
+
                         </div>
-                        <div class="collectionTypes col">
+                        <div class="collectionTypes col-sm">
                             <img class="img-thumbnail"
                                 src="https://www.vacheron-constantin.com/dam/rcq/vac/16/51/49/8/1651498.png.transform.vacprodcardhd.png"
                                 alt="">
-                            Fiftysix
+                            <p>Fiftysix</p>
                         </div>
-                        <div class="collectionTypes col">
+                        <div class="collectionTypes col-sm">
                             <img class="img-thumbnail"
                                 src="https://www.vacheron-constantin.com/dam/rcq/vac/23/06/51/5/2306515.png.transform.vacprodcardhd.png"
                                 alt="">
-                            Patrimony
+                            <p>Patrimony</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section>
+        <section id="sexes">
             <div class="row">
-                <div class="col-6">
-                    <h2>Exclusive Production Process</h2>
-                    <a name="" id="" class="btn btn-info" href="#forMen" role="button">For Men</a>
+                <div class="col-6 d-flex justify-content-center align-items-center">
+                    <div>
+                        <h2>Exclusive Production Process</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam unde repellat mollitia! Nisi,
+                            numquam quaerat ipsum placeat nobis velit dolor!</p>
+                        <a class="btn btn-info" href="#products" role="button">For Men</a>
+                    </div>
                     <!-- background image koy 
                       https://www.vacheron-constantin.com/dam/ric-import/vac/aef3/8c33/2343960.jpeg.transform.vacrectlandhd.jpg -->
 
                 </div>
-                <div class="col-6">
-                    <h2>Exclusive Production Process</h2>
-                    <a name="" id="" class="btn btn-info" href="#forWoman" role="button">For Woman</a>
+                <div class="col-6 d-flex justify-content-center align-items-center mt-2">
+                    <div>
+                        <h2>Exclusive Production Process</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam unde repellat mollitia! Nisi,
+                            numquam quaerat ipsum placeat nobis velit dolor!</p>
+                        <a name="" id="" class="btn btn-info" href="#products" role="button">For Woman</a>
+                    </div>
                     <!-- background image koy
                       https://www.vacheron-constantin.com/dam/ric-import/vac/aef3/8c94/2343994.jpeg.transform.vacrectlandhd.jpg -->
                 </div>
@@ -313,9 +334,14 @@
 
         </section>
         <!-- eventlistener kısmı vanilla js ile yapıldı -->
-        <section id="timePart">
-            <div class=" row bg-secondary">
+        <section id="timePart" class="container mt-3">
+            <div class=" row">
                 <div id="time" class="col-10 noclicked"></div>
+                <div id="poetry" class=" col-10 d-none">Do not go gentle into that good night,<br>
+                    Old age should burn and rave at close of day;<br>
+                    Rage, rage against the dying of the light.
+                    <br>
+                </div>
                 <div class="col-2 ms-auto">
                     <button id="showHideBtn" class="btn btn-light">
                         show/hide
@@ -324,16 +350,6 @@
 
             </div>
         </section>
-
-        <!-- satın alma opsyonu olan saatler bu şablona göre yerleşecek -->
-        <!-- <div class="card" style="width: 18rem;">
-              <img src="..." class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div> -->
 
 
         <!-- react ile ürünü card olarak koy / sepete ekle butonu ve adet ayarlama opsyonuu koy -->
@@ -347,14 +363,52 @@
     </main>
     <br><br><br><br><br>
     <!-- main ends -->
+    <hr>
 
     <!-- footer stars -->
-    <footer>
+    <!-- <footer>
+        <section id="about">
+            <div class="container">
+                <h5 class="text-center">About</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea odit sit maiores voluptas nihil quod ad
+                    voluptates illum. Accusamus explicabo eligendi sint. Libero quibusdam recusandae illum rerum
+                    necessitatibus. Officia, quisquam.</p>
+            </div>
 
+        </section>
+    </footer> -->
+    <footer class="bg-dark mt-auto">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-9">
+                    <div class="text-white text-muted">
+                        <span>&copy; Övgün TAŞ</span>
+                    </div>
+                </div>
+                <div class="col-3 px-0 class=" text-white"">
+                    <div class="ml-auto pl-5 instaIcon ">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                            <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                            <path
+                                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                        </svg>
+                        <a href="#">Instagram</a>
+                    </div>
+
+                    <div class="twitterIcon"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                            <path
+                                d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z" />
+                        </svg>
+                        <a href="#">Twitter</a>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
     </footer>
     <!-- footer ends -->
-
-
 
 
     <!-- Bootstrap JavaScript Libraries -->
