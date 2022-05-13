@@ -61,3 +61,20 @@ $(function () {
     })
 })
 
+// scrolling and changing navbar bg color;
+
+$(function () {
+    $(window).on("scroll", (scrolEvent) => {
+        let lastPositionTracker = scrolEvent.target.scrollingElement.scrollTop;
+
+        console.log(lastPositionTracker)
+        if (lastPositionTracker > 20) {
+            $("#navv").removeClass("bg-secondary").addClass("bg-light")
+            $("#navv").removeClass("navbar-dark").addClass("navbar-light")
+            $(".fa-basket-shopping").removeClass("text-white").addClass("text-dark")
+        } else if (lastPositionTracker == 0) {
+            $("#navv").removeClass("bg-light").addClass("bg-secondary");
+            $(".fa-basket-shopping").removeClass("text-dark").addClass("text-white")
+        }
+    })
+})
