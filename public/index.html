@@ -19,6 +19,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,400&display=swap"
         rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,400&display=swap"
+        rel="stylesheet">
     <!-- external css link -->
     <link rel="stylesheet" href="app.css">
 
@@ -168,7 +170,7 @@
 
                                 <div class="mb-3">
                                     <label for="logınInputEmail1" class="form-label">Email address</label>
-                                    <input type="email" class="form-control" id="   " name="memeberEmail"
+                                    <input type="email" class="form-control" id="logınInputEmail1" name="memeberEmail"
                                         aria-describedby="emailHelp" placeholder="...@example.com" required>
                                     <span id="invalidFeedbackEmail" class="text-danger"></span>
                                 </div>
@@ -282,21 +284,21 @@
             </div>
             <div class="row">
                 <div id="collectionTypes">
-                    <div class="row text-center">
-                        <div class="collectionTypes col-sm">
+                    <div class="row text-center d-flex justify-content-around">
+                        <div class="collectionTypes col-sm-3">
                             <img class="img-thumbnail"
                                 src="https://www.vacheron-constantin.com/dam/rcq/vac/23/06/51/9/2306519.png.transform.vacprodcardhd.png"
                                 alt="">
                             <p>Traditional</p>
 
                         </div>
-                        <div class="collectionTypes col-sm">
+                        <div class="collectionTypes col-sm-3">
                             <img class="img-thumbnail"
                                 src="https://www.vacheron-constantin.com/dam/rcq/vac/16/51/49/8/1651498.png.transform.vacprodcardhd.png"
                                 alt="">
                             <p>Fiftysix</p>
                         </div>
-                        <div class="collectionTypes col-sm">
+                        <div class="collectionTypes col-sm-3">
                             <img class="img-thumbnail"
                                 src="https://www.vacheron-constantin.com/dam/rcq/vac/23/06/51/5/2306515.png.transform.vacprodcardhd.png"
                                 alt="">
@@ -337,14 +339,15 @@
         <section id="timePart" class="container mt-3">
             <div class=" row">
                 <div id="time" class="col-10 noclicked"></div>
-                <div id="poetry" class=" col-10 d-none">Do not go gentle into that good night,<br>
+                <div id="poetry" class=" col-10 d-none" style="font-family: 'Pacifico', cursive;">Do not go gentle
+                    into that good night,<br>
                     Old age should burn and rave at close of day;<br>
                     Rage, rage against the dying of the light.
                     <br>
                 </div>
                 <div class="col-2 ms-auto">
-                    <button id="showHideBtn" class="btn btn-light">
-                        show/hide
+                    <button id="showHideBtn" class="btn btn-light ">
+                        Time
                     </button>
                 </div>
 
