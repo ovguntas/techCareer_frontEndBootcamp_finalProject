@@ -3,7 +3,7 @@ console.log(new Date().toLocaleString());
 console.log(time)
 setInterval(() => {
     const timeMoment = new Date();
-    time.textContent = timeMoment.toLocaleString()
+    time.textContent = timeMoment.toLocaleString("tr-TR")
 }, 1000)
 const showHideBtn = document.getElementById("showHideBtn");
 showHideBtn.addEventListener("click", () => {
