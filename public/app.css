@@ -21,13 +21,20 @@ w-100 {
 
 #timePart {
     /* height: 10rem; */
+    max-width: 45%;
+    border: solid 0.5rem #edafb8;
+    border-radius: 2rem;
     font-size: 2.5rem;
-    background-color: #d6ccc2;
+    background-color: #fef9ef;
     display: flex;
     justify-content: center;
     margin-bottom: 2rem;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
+    box-shadow:
+        inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+        0 0 0 2px rgb(255, 255, 255),
+        0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
 }
 
 /* footer {
@@ -37,4 +44,25 @@ w-100 {
 
 svg {
     width: 1rem;
+}
+
+#collectionTypes .collectionTypes {
+    box-shadow:
+        inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+        0 0 0 2px rgb(255, 255, 255),
+        0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+    border-radius: 2rem;
+}
+
+#collectionTypes .collectionTypes:hover {
+    border: solid 0.3rem #edafb8;
+
+}
+
+.collectionTypes p {
+    font-family: 'Pacifico', cursive;
+}
+
+#sexes {
+    margin-bottom: 2rem;
 }
